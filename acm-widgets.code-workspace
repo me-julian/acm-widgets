@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../acm-widget-template"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "acm-widget-template"
+	}
+}
