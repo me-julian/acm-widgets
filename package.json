@@ -21,7 +21,6 @@
     },
     "homepage": "https://github.com/me-julian/acm-widgets#readme",
     "dependencies": {
-        "@acm-widgets/kevintest": "^1.0.0",
         "@acm-widgets/testtwo": "^1.0.5",
         "express": "^4.19.2",
         "react": "^18.2.0",
