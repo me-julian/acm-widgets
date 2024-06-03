@@ -62,9 +62,11 @@ api.js sets up the basic Express server. The router exported in router.js is how
 
 Note that I didn't get exporting out of NPM package indexes working quite right, so you'll need to import each file explicitly. Examples are shown below.
 
-1. Once a participant has exported their package to NPM, use `npm install @acm-widgets/{PACKAGE_NAME}` to retrieve it.
+1. This project is not genericized. Participants must create an NPM account and be added to the @acm-widgets NPM organization by me so they can publish their packages. Details on how they do that are in the template's readme.
 
-2. Import their router and attach it to the main router using their package name as the URL. Example:
+2. Once a participant has published their package to NPM, use `npm install @acm-widgets/{PACKAGE_NAME}` to retrieve it.
+
+3. Import their router and attach it to the main router using their package name as the URL. Example:
 
 ```js
 // router.js
@@ -74,7 +76,7 @@ const router = Router();
 router.use('/my-package', myPackageRouter);
 ```
 
-3. Import their React widget component
+4. Import their React widget component
 
 ```js
 // App.jsx
@@ -106,7 +108,11 @@ function App() {
 export default App;
 ```
 
-4. Repeat this process for all widgets.
+5. Repeat this process for all widgets.
+
+6. Run `npm install` if you haven't already.
+
+7. Run `npm run dev:frontend` and `npm run dev:backend` in separate terminals to start and view the app with your widgets.
 
 For more info on what this process looks like from the participants' point of view, read the [template's readme](https://github.com/me-julian/acm-widget-template).
 
